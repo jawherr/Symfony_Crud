@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajouter Article{% endblock %}
+{% block body %}
+ {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+
+ {{ form_widget(form) }}
+
+  <button type="submit" class="btn btn-success">Créer</button>
+ {{ form_end(form) }}
+{% endblock %}
